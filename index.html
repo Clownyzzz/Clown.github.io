@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil Diga Fachrezi</title>
+
+
+    <style>
+
+        /* =========================================
+           FONT ALICE IN WONDERLAND
+        ========================================= */
+
+        @font-face {
+            font-family: 'Alice Wonderland';
+            src: url('Alice_in_Wonderland_3.ttf') format('truetype');
+        }
+
+
+        /* =========================================
+           DASAR WEBSITE
+        ========================================= */
+
+        html {
+            min-height: 100%;
+        }
+
+        body {
+
+            margin: 0;
+
+            min-height: 100vh;
+
+            padding: 40px;
+
+            box-sizing: border-box;
+
+            font-family: 'Alice Wonderland', serif;
+
+            font-size: 18px;
+
+            color: rgb(66, 66, 66);
+
+            background-color: #aba7a7;  
+
+
+            /* =====================================
+               BACKGROUND GOTHIC
+            ===================================== */
+
+            background-image: url('ilham1.jpg');
+
+            /*
+               Tinggi gambar mengikuti tinggi layar
+               sehingga proporsi gambar tetap terjaga
+            */
+
+            background-size: auto 150vh;
+
+            background-position: center center;
+
+            background-repeat: no-repeat;
+
+            background-attachment: fixed;
+
+        }
+
+
+        /* =========================================
+           OVERLAY GELAP
+        ========================================= */
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background: rgba(0, 0, 0, 0.35);
+
+            pointer-events: none;
+
+            z-index: -1;
+
+        }
+
+
+        /* =========================================
+           JUDUL UTAMA
+        ========================================= */
+
+        h1 {
+
+            font-family: 'Alice Wonderland', serif;
+
+            font-size: 50px;
+
+            margin-top: 0;
+
+            margin-bottom: 30px;
+
+        }
+
+
+        /* =========================================
+           SUB JUDUL
+        ========================================= */
+
+        h2 {
+
+            font-family: 'Alice Wonderland', serif;
+
+            font-size: 35px;
+
+            margin-top: 35px;
+
+        }
+
+
+        /* =========================================
+           PARAGRAF
+        ========================================= */
+
+        p {
+
+            font-size: 25px;
+
+            line-height: 1.6;
+
+        }
+
+
+        /* =========================================
+           LIST
+        ========================================= */
+
+        li {
+
+            font-size: 25px;
+
+            margin-bottom: 8px;
+
+        }
+
+
+        /* =========================================
+           FOTO PROFIL
+        ========================================= */
+
+        img {
+
+            width: 200px;
+
+            height: 250px;
+
+            object-fit: cover;
+
+            border-radius: 10px;
+
+            border: 2px solid rgb(0, 0, 0);
+
+        }
+
+
+        /* =========================================
+           LINK
+        ========================================= */
+
+        a {
+
+            font-family: 'Alice Wonderland', serif;
+
+            font-size: 25px;
+
+            color: rgb(255, 0, 0);
+
+            text-decoration: none;
+
+        }
+
+
+        /* Saat mouse diarahkan ke link */
+
+        a:hover {
+
+            color: #000000;
+
+            text-decoration: underline;
+
+        }
+
+
+        /* =========================================
+           AUDIO
+        ========================================= */
+
+        audio {
+
+            margin-top: 10px;
+
+            max-width: 100%;
+
+        }
+
+
+        /* =========================================
+           RESPONSIVE HP
+           Ukuran layar maksimal 768px
+        ========================================= */
+
+        @media (max-width: 768px) {
+
+            body {
+
+                padding: 20px;
+
+                font-size: 16px;
+
+                /*
+                   Background mengikuti tinggi HP
+                   dan tetap menjaga proporsi
+                */
+
+                background-size: auto 100vh;
+
+                background-position: center center;
+
+                background-attachment: scroll;
+
+            }
+
+
+            h1 {
+
+                font-size: 32px;
+
+                margin-bottom: 25px;
+
+            }
+
+
+            h2 {
+
+                font-size: 24px;
+
+                margin-top: 30px;
+
+            }
+
+
+            p {
+
+                font-size: 16px;
+
+                line-height: 1.5;
+
+            }
+
+
+            li {
+
+                font-size: 16px;
+
+            }
+
+
+            a {
+
+                font-size: 16px;
+
+            }
+
+
+            img {
+
+                width: 160px;
+
+                height: 200px;
+
+            }
+
+        }
+
+
+        /* =========================================
+           RESPONSIVE LAYAR SANGAT KECIL
+        ========================================= */
+
+        @media (max-width: 400px) {
+
+            body {
+
+                padding: 15px;
+
+            }
+
+
+            h1 {
+
+                font-size: 28px;
+
+            }
+
+
+            h2 {
+
+                font-size: 21px;
+
+            }
+
+
+            p {
+
+                font-size: 15px;
+
+            }
+
+
+            li {
+
+                font-size: 15px;
+
+            }
+
+
+            img {
+
+                width: 140px;
+
+                height: 175px;
+
+            }
+
+        }
+
+
+        /* =========================================
+           LAPTOP / DESKTOP
+           Ukuran lebih dari 768px
+        ========================================= */
+
+        @media (min-width: 769px) {
+
+            body {
+
+                padding: 40px;
+
+                background-size: auto 100vh;
+
+                background-position: center center;
+
+                background-attachment: fixed;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         JUDUL
+    ========================================= -->
+
+    <h1>
+        Profil Diga Fachrezi
+    </h1>
+
+
+    <!-- =========================================
+         FOTO PROFIL
+    ========================================= -->
+
+    <h2>
+        Foto Profil
+    </h2>
+
+    <img
+        src="Diga.jpg"
+        alt="Foto Profil Diga Fachrezi"
+        width="200"
+        height="250"
+    >
+
+
+    <!-- =========================================
+         BIODATA
+    ========================================= -->
+
+    <h2>
+        Biodata
+    </h2>
+
+
+    <p>
+
+        Nama saya adalah Diga Fachrezi.
+        Saya merupakan mahasiswa Program Studi
+        Teknik Informatika di Universitas Indraprasta PGRI.
+        Saya lahir di Jakarta pada 16 Agustus 2005.
+        Saya memiliki hobi mendengarkan musik.
+        (Jika hidupmu terlalu sepi, maka lagumu harus berisik)
+
+    </p>
+
+
+    <p>
+
+        <strong>Nama:</strong>
+        Diga Fachrezi
+        <br>
+
+        <strong>NIM:</strong>
+        202443500702
+        <br>
+
+        <strong>Program Studi:</strong>
+        Teknik Informatika
+        <br>
+
+        <strong>Universitas:</strong>
+        Universitas Indraprasta PGRI
+        <br>
+
+        <strong>Tempat, Tanggal Lahir:</strong>
+        Jakarta, 16 Agustus 2005
+
+    </p>
+
+
+    <!-- =========================================
+         HOBI
+    ========================================= -->
+
+    <h2>
+        Hobi
+    </h2>
+
+    <ul>
+
+        <li>
+            Mendengar Musik
+        </li>
+
+    </ul>
+
+
+    <!-- =========================================
+         PENDIDIKAN
+    ========================================= -->
+
+    <h2>
+        Pendidikan
+    </h2>
+
+    <ol>
+
+        <li>
+            SMK Kemala Bhayangkari Delog
+        </li>
+
+        <li>
+            Universitas Indraprasta PGRI -
+            Teknik Informatika
+        </li>
+
+    </ol>
+
+
+    <!-- =========================================
+         MEDIA SOSIAL
+    ========================================= -->
+
+    <h2>
+        Media Sosial
+    </h2>
+
+
+    <p>
+
+        Instagram:
+
+        <a
+            href="https://www.instagram.com/digafchrzz?stkn=MXZnbndoZm11em50bg=="
+            target="_blank"
+            title="Instagram Diga Fachrezi"
+        >
+
+            @digafchrzz
+
+        </a>
+
+    </p>
+
+
+    <p>
+
+        WhatsApp:
+
+        <a
+            href="https://wa.me/qr/NG6YUGYJVVO5D1"
+            target="_blank"
+            title="WhatsApp Diga Fachrezi"
+        >
+
+            WhatsApp Saya
+
+        </a>
+
+    </p>
+
+
+    <!-- =========================================
+         MUSIK
+    ========================================= -->
+
+    <h2>
+        Musik Favorit
+    </h2>
+
+
+    <p>
+
+        <strong>Judul Musik:</strong>
+        Avenged Sevenfold - M.I.A.
+
+    </p>
+
+
+    <audio controls autoplay>
+
+        <source
+            src="Avenged Sevenfold - M.I.A..mp3"
+            type="audio/mp3"
+        >
+
+        Browser Anda tidak mendukung
+        pemutar audio.
+
+    </audio>
+
+
+</body>
+
+</html>
